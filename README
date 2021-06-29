@@ -1,0 +1,12 @@
+This is very much an experiment and work in progress.
+
+By not using interrupt triggering I found that noise reduction was much easier.
+Uses pulseIn() instead of digitalRead() to measure incoming pulses.
+CRC checking is done and bad packets will be ignored.
+SENSOR ID diplayed is the last sensor unit that has been recieved.
+  it is not being used for anything else.
+Data for all sensors is stored in the weather_station structure.
+
+The code has only been tested on an UNO R3.
+Rain sensor has not been tested as i dont currently have access to one.
+Threshold values may need adjustment for some recievers.
